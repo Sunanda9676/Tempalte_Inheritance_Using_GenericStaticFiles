@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Parent</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/c1.css' %}">
+</head>
+<body>
+<center>
+    <h1>Anusri photo</h1>
+    <img src="{% static 'images/anusri.jpeg' %}"width=400px height="300px">
+    {% block body_block %}
+    <h1>After image parent line</h1>
+    {% endblock %}
+</center>
+</body>
+</html>
